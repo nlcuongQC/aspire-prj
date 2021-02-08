@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Aspire - Login">
+    <listeners>
+        <listener class-name="commons.MethodListener"/>
+        <listener class-name="reportconfig.AllureTestListener"/>
+    </listeners>
+
+    <suite-files>
+        <suite-file path="test_login.xml"/>
+        <suite-file path="test_invite.xml"/>
+    </suite-files>
+</suite>

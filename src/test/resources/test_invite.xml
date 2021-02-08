@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Aspire - Invite New User">
+    <listeners>
+        <listener class-name="commons.MethodListener"/>
+        <listener class-name="reportconfig.AllureTestListener"/>
+    </listeners>
+
+    <test name="Run on Chrome">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="url" value="https://feature-qa.customer-frontend.staging.aspireapp.com/sg/"/>
+        <classes>
+            <class name="com.aspire.Test_Invite_New_User_01"/>
+        </classes>
+    </test>
+</suite>
